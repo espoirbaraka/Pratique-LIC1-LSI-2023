@@ -1,7 +1,42 @@
-.third_div{
-    border: 5px solid green;
-    width: 250px;
-    height: 250px;
-    padding: 50px;
+#en_tete{
+    background-color: #22aaff;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 15px 50px 20px 50px;
+}
+#pub{
+    background-color: #434648;
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+a{
+    text-decoration: none;
     margin: 20px;
+    font-family: Arial;
+    color: white;
+    font-weight: bold;
+}
+#mon_titre{
+    text-align: center;
+    font-family: Arial;
+    color: white;
+}
+.publication{
+    border: 2px solid white;
+    width: 25%;
+    float: left;
+    margin: 10px;
+    background-color: #7c7e80;
+    padding: 10px;
+}
+h4{
+    text-align: center;
+    color: white;
+    font-family: Arial;
 }
