@@ -2,28 +2,26 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,
- initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ma page</title>
+    <script src="js/myScript.js"></script>
+    <script>
+        function changeTexte(){
+            document.getElementById("mon_titre").innerHTML="Mon nouveau titre";
+            document.getElementById("mon_paragraphe").style.color="red";
+        }
+    </script>
+
 </head>
-<body>
-    <div id="titre">
-        <p>République <sub>Democratique</sub> du congo</p>
-        <!-- <a href="#publication">Publication</a>
-        <a href="#contact">Contact</a>
-        <audio src="media/2pac.mp3" controls></audio>
-        <video src="media/video.mp4" controls></video> -->
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
-    </div>
-    <div id="publication">
-        <h1>Mes publications</h1>
-        <a href="#titre">Titre</a>
-        <a href="#contact">Contact</a>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </div>
-    <div id="contact">
-        <h1>Mes contacts</h1>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </div>
+<body onload="changeTexte()">
+    <h1 id="mon_titre">Mon titre</h1>
+    <p id="mon_paragraphe">Mon paragraphe</p>
+    <button onclick="changeParagraphe()">Change paragraphe</button>
+
+    <script>
+        function changeParagraphe(){
+            document.getElementById("mon_paragraphe").innerHTML="Mon nouveau paragraphe";
+        }
+    </script>
 </body>
 </html>

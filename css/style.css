@@ -1,0 +1,26 @@
+.first_div{
+    font-family: Arial,"Times New Roman",sans-serif;
+    color: #888800;
+}
+.second_div{
+    font-size: 20px;
+}
+#para_3{
+    color: RGBA(200,100,255,0.8);
+}
+#para_1{
+    font-weight: bold;
+}
+#para_4{
+    font-style: italic;
+    text-decoration:underline;
+    text-transform: uppercase;
+}
+#titre{
+    text-align: center;
+}
+.third_div{
+    text-align: justify;
+    line-height: 50px;
+}
+

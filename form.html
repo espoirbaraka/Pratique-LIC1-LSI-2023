@@ -1,20 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Mon formulaire</title>
-    </head>
-    <body>
-        <h1>Mon formulaire</h1>
-        <form method="POST">
-            <input type="text" name="nom" />
-            <input type="number" name="age" />
-            <input type="email" name="email" />
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mon formulaire</title>
+</head>
+
+<body>
+    <h1>Mon formulaire</h1>
+    <form method="GET">
+        <div>
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" placeholder="Tapez votre nom ici" value="ISIG" />
+        </div>
+        <br>
+        <div>
+            <label>Age</label>
+            <input type="number" name="age" placeholder="Tapez votre age" />
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Tapez votre adresse mail" />
+        </div>
+        <br>
+        <div>
+            <label>Date de naissance</label>
             <input type="date" name="datenaissance" />
-            <input type="tel" name="telephone" />
-            <input type="password" name="mot_de_passe" />
+        </div>
+        <div>
+            <label>telephone</label>
+            <input type="tel" name="telephone" value="099999999999" />
+        </div>
+        <div>
+            <label>Url</label>
+            <input type="url" name="mot_de_passe" required />
+        </div>
+        <br>
+        <div>
+            <label>Chargez votre photo</label>
+            <input type="file" name="image" />
+        </div>
+        <br>
+        <div>
+            <label>Homme</label>
+            <input type="radio" value="Homme" name="sexe"/>
+            <label>Femme</label>
+            <input type="radio" value="Femme" name="sexe"/>
+        </div>
+        <br>
+        <div>
+            <label>HTML</label>
+            <input type="checkbox" value="HTML" name="comp" />
+            <label>CSS</label>
+            <input type="checkbox" value="CSS" name="comp" />
+            <label>JAVASCRIPT</label>
+            <input type="checkbox" value="JAVASCRIPT" name="comp" />
+            <label>PHP</label>
+            <input type="checkbox" value="PHP" name="comp" />
+        </div>
+        <br>
+        <div>
+            <label>Commentaire</label>
+            <textarea rows="10" cols="100"></textarea>
+        </div>
+        <br>
+        <div>
+            <label>Pays</label>
+            <select>
+                <option>FRANCE</option>
+                <option>RDC</option>
+                <option>CANADA</option>
+            </select>
+        </div>
+        <div>
             <input type="submit" value="Envoyer" />
-        </form>
-    </body>
+        </div>
+
+    </form>
+</body>
+
 </html>

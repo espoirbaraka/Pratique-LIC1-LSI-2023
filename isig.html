@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ma page</title>
+    <script src="js/myScript.js"></script>
 </head>
-<body>
-    <h1>Mon troisième fichier</h1>
-    <a href="index.html">Acceuil</a>
-    <a href="about.html">A propos</a>
+
+<body onload="changeCouleur()">
+    <p id="para">Some text here</p>
+    <button onclick="changeColor('blue');">blue</button>
+    <button onclick="changeColor('red');">red</button>
+    <script>
+        function changeColor(newColor) {
+            var elem = document.getElementById('para');
+            elem.style.color = newColor;
+        }
+    </script>
 </body>
+
 </html>
