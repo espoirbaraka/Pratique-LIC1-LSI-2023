@@ -21,6 +21,16 @@
 }
 .third_div{
     text-align: justify;
-    line-height: 50px;
+    /* border-style: solid;
+    border-color: red;
+    border-width: 5px; */
+    border: 5px solid green;
+    /* background-color: #22aaff; */
+    
+}
+body{
+    /* background-image: url('../logo_isig.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
 }
 
