@@ -40,3 +40,8 @@ h4{
     color: white;
     font-family: Arial;
 }
+
+#my_form{
+    margin: auto;
+    width: 200px;
+}
