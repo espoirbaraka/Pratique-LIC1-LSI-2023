@@ -44,4 +44,7 @@ h4{
 #my_form{
     margin: auto;
     width: 200px;
+    border: 1px solid #a9acae;
+    padding: 50px;
+    background-color: #a9acae;
 }
