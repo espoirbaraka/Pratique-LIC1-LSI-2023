@@ -23,14 +23,17 @@
         function allumer(){
             document.getElementById("img").src="pic_bulbon.gif";
         }
+        function eteindre(){
+            document.getElementById("img").src="pic_bulboff.gif"
+        }
     </script>
 </head>
 <body id="ma_page">
     <h1 id="titre">MON TITRE</h1>
     <h2 id="titre2">MON DEUXIEME TITRE</h2>
     <img id="img" src="pic_bulboff.gif" />
-    <button onclick="allumer();">Allumer</button>
-    <button>Eteindre</button>
+    <button onmouseover="allumer();">Allumer</button>
+    <button onmouseover="eteindre();">Eteindre</button>
     <button onclick="changestyle();">Change le style</button>
     <button onclick="changetitre();"> Modifier le titre</button>
     <button onclick="darkmode();">Mode sombre</button>
