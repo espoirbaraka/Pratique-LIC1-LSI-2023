@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changetitre(){
+            document.getElementById('titre').innerHTML = 
+            'MON TITRE MODIFIE';
+        }
+        function changestyle(){
+            document.getElementById("titre2").style.color = "red";
+        }
+        function darkmode(){
+            document.getElementById("ma_page").style.backgroundColor 
+            = "black";
+            document.getElementById("titre").style.color 
+            = "white";
+            document.getElementById("titre2").style.color 
+            = "white";
+        }
+    </script>
+</head>
+<body id="ma_page">
+    <h1 id="titre">MON TITRE</h1>
+    <h2 id="titre2">MON DEUXIEME TITRE</h2>
+    <button onclick="changestyle();">Change le style</button>
+    <button onclick="changetitre();"> Modifier le titre</button>
+    <button onclick="darkmode();">Mode sombre</button>
+</body>
+</html>
