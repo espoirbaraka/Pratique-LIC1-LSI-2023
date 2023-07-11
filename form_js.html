@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="my_js.js"></script>
+</head>
+<body>
+    <form style="margin: auto; 
+    width: 100px; padding-top: 100px;">
+        <div>
+            <label>Nombre 1</label>
+        </div>
+        <input type="number" name="nbre1" 
+        id="first_number" />
+        <div>
+            <label>Nombre 2</label>
+        </div>
+        <input type="number" name="nbre2" 
+        id="second_number" />
+
+        <div>
+            <label>Etat-civil</label>
+        </div>
+        <select id="etat" onchange="afficherchamp();">
+            <option value="celibataire">Celibataire</option>
+            <option value="marie">Marié</option>
+        </select>
+
+        <div id="conj" style="display: none;">
+            <div>
+                <label>Nom conjoint</label>
+            </div>
+            <input name="conjoint" type="text" id="conjoint" />    
+        </div>
+        <div style="margin-top: 20px;">
+            <button onclick="somme();">
+                Calculer</button>
+        </div>
+    </form>
+</body>
+</html>
