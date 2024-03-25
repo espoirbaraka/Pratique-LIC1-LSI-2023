@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mon formulaire</title>
+</head>
+
+<body style="background-color: rgb(185, 195, 195);">
+    <h1>Formulaire d'inscription</h1>
+    <form method="GET">
+        <table>
+            <tr>
+                <td><label for="nom">Nom complet</label></td>
+                <td><input type="text" name="nom" placeholder="Tapez votre nom ici" /></td>
+            </tr>
+            <tr>
+                <td><label for="nom">Age</label></td>
+                <td><input type="number" name="age" placeholder="Tapez votre age" /></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td>
+                <td><input type="email" name="email" placeholder="Tapez votre adresse mail" /></td>
+            </tr>
+            <tr>
+                <td><label>Date de naissance</label></td>
+                <td><input type="date" name="datenaissance" /></td>
+            </tr>
+            <tr>
+                <td><label>Pays</label></td>
+                <td><select>
+                    <option>RDC</option>
+                    <option>RWANDA</option>
+                    <option>CANADA</option>
+                </select></td>
+            </tr>
+            
+
+        </table>
+        
+        <br>
+        <div>
+            <label>Homme</label>
+            <input type="radio" value="Homme" name="sexe"/>
+            <label>Femme</label>
+            <input type="radio" value="Femme" name="sexe"/>
+        </div>
+        
+        <br>
+        
+        <div>
+            <input type="submit" value="Valider" />
+        </div>
+
+    </form>
+</body>
+
+</html>
